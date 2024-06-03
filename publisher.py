@@ -1,8 +1,10 @@
 #import paho.mqtt.client as mqtt
-#from time import sleep
+from time import sleep
 #import os
 #
-print("Hello, world!")
+while true:
+	print("Hello, world!")
+	sleep(5)
 #def on_connect(client, userdata, flags, reason_code, properties):
 #	print(f"Connected with code {reason_code}")
 #
