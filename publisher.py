@@ -14,8 +14,9 @@ sleep(5)
 client.loop()
 print("Ready!")
 
-for i in range(10):
+for i in range(1000):
 	client.publish("bandwidth", i, qos=2)
+	sleep(5)
 
 client.disconnect()
 client.loop_stop()
