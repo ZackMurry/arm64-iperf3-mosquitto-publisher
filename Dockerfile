@@ -3,5 +3,7 @@ FROM alpine:3.14
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
-CMD ["python3", "./publisher.py"]
+#CMD ["python3", "./publisher.py"]
+CMD echo 'Hello world'
+
 
