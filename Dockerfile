@@ -3,5 +3,5 @@ FROM alpine:3.14
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
-CMD ["/usr/bin/python", "/usr/src/app/publisher.py"]
+CMD ["python3", "./publisher.py"]
 
