@@ -7,7 +7,7 @@ def on_connect(client, userdata, flags, reason_code, properties):
 
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_connect = on_connect
-broker_ip = os.environ("BROKER_IP")
+broker_ip = os.environ["BROKER_IP"]
 client.connect(broker_ip)
 
 sleep(5)
