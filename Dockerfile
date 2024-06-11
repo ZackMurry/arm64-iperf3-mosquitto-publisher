@@ -5,5 +5,5 @@ RUN pip install iperf3
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
-CMD python3 ./publisher.py
+CMD bash publish.sh
 
